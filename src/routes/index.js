@@ -1,4 +1,5 @@
 const express = require('express')
+const hbs = require('hbs')
 const nodemailer = require('nodemailer')
 const { google, Auth } = require('googleapis')
 const router = express.Router();
@@ -57,7 +58,7 @@ router.post("/send-email", (req,res)=> {
         }
     }
     sendMail()
-        .then(result=> res.status(200).send('enviado'))
+        .then(result=> res.redirect('/contact'))
         .catch(error=> console.log(error.message))
 })
 

@@ -32,7 +32,7 @@ function eventListeners() {
 //Funciones
 function iniciarApp() { 
     btnSubmit.disabled = true;
-    btnSubmit.style.backgroundColor = 'rgba(230, 187, 0, 0.5)';
+    btnSubmit.style.backgroundColor = 'rgb(41,44,47,0.5)';
 }
 
 // Valida que el campo tenga algo escrito
@@ -53,7 +53,7 @@ function validarCampos(e) {
 
     if (date.name.value !== '' && date.mail.value !== '' && date.phone.value !== '' && date.msg.value !== '') {
         btnSubmit.disabled = false;
-        btnSubmit.style.removeProperty('background-color');
+        btnSubmit.style.backgroundColor = '#292c2f';
         btnSubmit.style.cursor = 'pointer'
     }
 }

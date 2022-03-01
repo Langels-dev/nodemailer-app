@@ -4,7 +4,7 @@
   "description": "Sends mails",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Me",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "googleapis": "^95.0.0",
+    "hbs": "^4.2.0",
     "nodemailer": "^6.7.2"
   },
   "devDependencies": {
